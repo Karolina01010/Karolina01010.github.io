@@ -1,7 +1,7 @@
 $(document).ready(function(){
    var mymap = L.map('mymap',
                     {
-                     center: [52.1, 21.0], 
+                     center: [52.1, 21.0], //zmienic tutaj współrzędne na ten teren !!! dla buforów puste tła 
                      zoom: 10,
                      zoomControl:true,
                      attributionControl:false
@@ -51,9 +51,6 @@ $(document).ready(function(){
     //lista obiektów typucheckbox
     
     var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ};
-    
-    
-    
     
     
 
