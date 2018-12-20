@@ -1,13 +1,10 @@
 $(document).ready(function(){
    var mymap = L.map('mymap',
                     {
-<<<<<<< HEAD
                      center: [50.02, 22.0], 
                      zoom: 12,
-=======
                      center: [52.1, 21.0], //zmienic tutaj współrzędne na ten teren !!! dla buforów puste tła 
                      zoom: 10,
->>>>>>> f28aba968f54e9750c796ba4c9d1b1d522ee7289
                      zoomControl:true,
                      attributionControl:false
                     }
