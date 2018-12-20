@@ -3,8 +3,6 @@ $(document).ready(function(){
                     {
                      center: [50.02, 22.0], 
                      zoom: 12,
-                     center: [52.1, 21.0], //zmienic tutaj współrzędne na ten teren !!! dla buforów puste tła 
-                     zoom: 10,
                      zoomControl:true,
                      attributionControl:false
                     }
@@ -166,7 +164,7 @@ $(document).ready(function(){
                     "Najlepsza lokalizacja szkół": lyrPRG_Najlep_szkoly                    
                    };
 
-    var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ};
+
 
     
     
