@@ -154,7 +154,7 @@ $(document).ready(function(){
     
     //lista obiektów typucheckbox
     
-<<<<<<< HEAD
+
     var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ,
                     "Wody liniowe": lyrPRGWody_liniowe,
                     "Wody powierzchniowe": lyrPRGWody_powierz,
@@ -168,9 +168,9 @@ $(document).ready(function(){
                     "Szkoły w gminie": lyrPRG_Szkoly,
                     "Najlepsza lokalizacja szkół": lyrPRG_Najlep_szkoly                    
                    };
-=======
+
     var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ};
->>>>>>> f28aba968f54e9750c796ba4c9d1b1d522ee7289
+
     
     
 
