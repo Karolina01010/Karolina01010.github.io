@@ -1,8 +1,13 @@
 $(document).ready(function(){
    var mymap = L.map('mymap',
                     {
+<<<<<<< HEAD
                      center: [50.02, 22.0], 
                      zoom: 12,
+=======
+                     center: [52.1, 21.0], //zmienic tutaj współrzędne na ten teren !!! dla buforów puste tła 
+                     zoom: 10,
+>>>>>>> f28aba968f54e9750c796ba4c9d1b1d522ee7289
                      zoomControl:true,
                      attributionControl:false
                     }
@@ -149,6 +154,7 @@ $(document).ready(function(){
     
     //lista obiektów typucheckbox
     
+<<<<<<< HEAD
     var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ,
                     "Wody liniowe": lyrPRGWody_liniowe,
                     "Wody powierzchniowe": lyrPRGWody_powierz,
@@ -162,6 +168,9 @@ $(document).ready(function(){
                     "Szkoły w gminie": lyrPRG_Szkoly,
                     "Najlepsza lokalizacja szkół": lyrPRG_Najlep_szkoly                    
                    };
+=======
+    var overlays = {"Wykaz Wojewodztw": lyrPRGWOJ};
+>>>>>>> f28aba968f54e9750c796ba4c9d1b1d522ee7289
     
     
 
