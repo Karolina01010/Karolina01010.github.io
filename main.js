@@ -38,7 +38,7 @@ $(document).ready(function(){
     
     var lyrPRGWody_liniowe = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'woda_l',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -47,7 +47,7 @@ $(document).ready(function(){
     
     var lyrPRGWody_powierz = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'woda_p',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -56,7 +56,7 @@ $(document).ready(function(){
     
     var lyrPRG_Drogi = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'drogi',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -65,7 +65,7 @@ $(document).ready(function(){
     
     var lyrPRG_Kolej = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'kolej',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -74,7 +74,7 @@ $(document).ready(function(){
     
     var lyrPRG_Szkoly = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'szkola',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -83,7 +83,7 @@ $(document).ready(function(){
     
     var lyrPRG_Wiezenia = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'wiezienia',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -101,7 +101,7 @@ $(document).ready(function(){
     
     var lyrPRG_Rekreacja = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 't_rekre',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -110,25 +110,17 @@ $(document).ready(function(){
     
     var lyrPRG_Mieszkaniowe = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 't_mieszkaniowe',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
     } 
     );
     
-    var lyrPRG_Najlep_szkoly = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
-                    {
-                    layers: 'Raster',
-                    format:'image/png',
-                    transparent: 'true',
-                    version:'1.1.1'
-    } 
-    );
     
     var lyrPRG_Szkoly = L.tileLayer.wms('http://localhost:8080/geoserver/ATE_Workspace/wms',
                     {
-                    layers: 'Raster',
+                    layers: 'szkoly',
                     format:'image/png',
                     transparent: 'true',
                     version:'1.1.1'
@@ -160,8 +152,8 @@ $(document).ready(function(){
                     "Cmentarze": lyrPRG_Cmentarze,
                     "Tereny rekreacyjne": lyrPRG_Rekreacja,
                     "Osiedla mieszkaniowe": lyrPRG_Mieszkaniowe,
-                    "Szkoły w gminie": lyrPRG_Szkoly,
-                    "Najlepsza lokalizacja szkół": lyrPRG_Najlep_szkoly                    
+               
+                              
                    };
 
 
