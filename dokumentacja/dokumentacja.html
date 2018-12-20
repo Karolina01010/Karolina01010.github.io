@@ -8,9 +8,31 @@
             <meta name="keywords" content="ATE, geodezja">
             <meta name="author" content="MW">
             <title> Analiza terenu projekt</title>
-            <link rel="stylesheet" href="../main.css">           
+            <link rel="stylesheet" href="../main.css">
+            <style>
+                #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+                }
+
+                #myBtn:hover {
+                  background-color: #555;
+                }
+            </style>
         </head>
-        <body>
+        
+<body>
             <header>
                <div id="logotyp">
                     <h1 class="logo">
@@ -28,7 +50,9 @@
                     <li><a href="#">Kontakt</a><li>
                 </ul>
             </nav>
-            
+<!---- Przycisk od powrotu na gore --->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Na górę</button>
+    
             <div class="container">
                <div class = "tekst">
                     <article>
@@ -41,20 +65,132 @@
                                 
                         </br></br>
                     <div class ="obrazek">
-                           
-                            <img src="../dokumentacja/zdjecia/1.jpg">
-                             
-                              </br></br>
-                               Prace rozpoczęto od utworzenia nowego projektu w programie ArcMap	oraz założenia nowej geobazy i przypisania jej jako baza domyślna co ułatwi prace w dalszych etapach. Następnie dodano warstwy zawierającej takie obiekty jak : wody powierzchniowe i liniowe, drogi, kolej, budynki, zagospodarowanie terenu. Kolejnym etapem było przycięcie warstw do danej gminy, w moim przypadku jest to gmin Rzeszów. 
+                          <img src="../dokumentacja/zdjecia/1.jpg">
+                    </div>
+                              
+                            <p>
+                                Prace rozpoczęto od utworzenia nowego projektu w programie ArcMap	oraz założenia nowej geobazy i przypisania jej jako baza domyślna co ułatwi prace w dalszych etapach. Następnie dodano warstwy zawierającej takie obiekty jak : wody powierzchniowe i liniowe, drogi, kolej, budynki, zagospodarowanie terenu. Kolejnym etapem było przycięcie warstw do danej gminy, w moim przypadku jest to gmin Rzeszów.
+                            </p>                           
                                 
-                            </br>  </br></br>
-                           
+                            
+                    <div class ="obrazek">
                             <img src="../dokumentacja/zdjecia/rzeszow.gif">
-                                
-                                
+                    </div>
+                            <p>
+                                Kolejnym etapem było zapoznanie się z narzędziem ModelBulider. Jest to narzędzie wykorzystywane do tworzenia, edytowania i zarządzania modelami. Modele to przepływy pracy (workflows), które łączą sekwencje narzędzi geoprzetwarzania, dostarczając dane wyjściowe jednego narzędzia do innego narzędzia jako dane wejściowe. ModelBuilder może być również postrzegany jako wizualny język programowania do tworzenia przepływów pracy.
+                                <br>    W pierwszej kolejności należało wybrać w pasku ikonkę ModelBulider aby otworzyć nowe okno z pustym modelem.
                             </p>
+                    <div class ="obrazek">
+                            <img src="zdjecia/Przycisk.jpg" style="width:20%;height:10%;">
+                    </div>
+                            <p>
+                                Po zapoznaniu się z podstawowymi funkcjami ModelBulider przystąpiliśmy do budowy własnego modelu, dodając najpierw dane, które chcieliśmy poddać przetworzeniu. Dane miały spełniać podane w trakcie zajęć kryteria. Dane zapisane  w postaci wektorowej pobrane z portalu Open Street Map. Podzielone są na kilka podstawowych warstw zapisane w postaci .shp. Warstwy, które podlegały analizie wraz z kryteriami to: 
+                            </p>
+                            <ol>
+                                <li>Wody (waterways.shp ) – odległość : 150 m, 200 m, 250 m, 300 m ;</li>
+                                <li>Wody powierzchnie (water_a.shp) - odległość  100 m, 200 m, 300 m, 400 m</li>
+                                <li>Drogi (roads.shp) – odległość  50 m, 100 m</li>
+                                <li>Linia kolejowa (railways.shp) –200 m, 300 m, 400 m ;</li>
+                                <li>Szkoły (poise_a.shp) – 400 m, 600 m, 800 m ; </li>
+                                <li>Więzienia (poise_a.shp) – odległość min 500 m, 1000 m, 1200 m; </li>
+                                <li>Cmentarze (landuse.shp)  - 300 m, 400 m; </li>
+                                <li>Tereny rekreacyjne (landuse.shp) – 100 m, 200 m, 300 m, 400 m;</li>
+                                <li>Osiedla mieszkaniowe (landuse.shp)  –-100, 200, 300, 400;</li>                                
+                            </ol>
+                            <p>
+                                Dodatkowo należało pamiętać o dodaniu warstwy zawierającej obszar wybranej gminy. 
+                                Aby dodać dane do modelu należy wybrać z paska zadań narzędzie Add Data or Tool… i wybrać odpowienidnio wcześniej przycięte warstwy.
+                            </p>
+                    <div class ="obrazek">
+                            <img src="zdjecia/Add_Data.jpg" style="width:16%;height:10%;">
+                    </div>
+                            <p>
+                                Kolejnym etapem było dodanie narzędzi geoprzetwarzania, są to podstawowe elementy umożliwiające wykonanie wiele zadań GIS. Po zapoznaniu się z podstawowymi narzędziami w łatwo sposób mogliśmy przystąpić do tworzenia własnego modelu.
+                            </p>
+                            <p>
+                                Warto dodać, że w przypadku kiedy narzędzie zostanie wyświetlone w kolorze szarym, oznacza to, że nie jest jeszcze gotowe do uruchomienia ale jest wybrana zła ścieżka zapisu danych lub danych wejściowych.
+                                Geoprzetwarzenie modeli polega na łączeniu danych i narzędzi z procesami. Ważnym etapem było połączenie danych bezpośrednio z narzędziami dodając połączenia miedzy nimi przy pomocy narzędzia Connect.
+                            </p>
+                    <div class ="obrazek">
+                            <img src="zdjecia/Dodawanie_polaczen.jpg" style="width:20%;height:15%;">
+                    </div>
+                             <p>
+                                 Samo połączenie nie wystarczy do prawidłowego działania modelu, dodatkowo należy określić parametry w zależności od obiektu i zgodnie z podanymi kryteriami. Gdy wszystkie wymagane parametry narzędzia mają poprawną wartość, kolor elementu zmieni się a żółty, co oznacza ze jest gotowe do uruchomienia.<br> 	
+                                 W taki oto sposób został utworzony cały model do analizy terenu w poszukiwaniu terenu najlepszego dla budowy nowej szkoły.<br> 
+                                 Aby sprawdzić działanie modelu wystarczy teraz uruchomić cały model. Podczas gdy narzędzia w modelu są uruchamiane, wyświetlane jest okno postępu wskazujące, który proces jest uruchomiony podświetlając go na czerwono.
+
+                            </p>   
+                    <div class ="obrazek">
+                            <img src="zdjecia/Schemat.JPG" style="width:85%;height:45%;">
+                    </div>
+                            <p>
+                                1.	Na niebiesko są to dane dodawane do modelu przez użytkownika. W tym przypadku są to warstwy zawierające :zabudowę, drogi, rzeki, kolej.<br> 
+                                2.	Select – za pomocą tego narzędzie wybierane są odpowiednie dany spełniające założone kryteria. W tym przypadku wybierane zostały tereny rekreacyjne, osiedla mieszkanowe oraz cmentarze z danych zagodpodarowanie terenu (landuse.shp) oraz szkoły i więzienia z danych zabudowy (pois.shp). Narzędzie oznaczone jest kolorem zółtym.
+                            </p>
+                    <div class ="obrazek">
+                            <img src="zdjecia/Weryfikacja.JPG" style="width:20%;height:15%;">
+                    </div>
+                            <p>
+                                3.	Na zielona zaznaczone są dane wynikowe po przeprowadzonej analizie tworząc po każdej analizie odpowiednią nową warstwę. 
+                            </p>
+                            <p>
+                                4.	Multiple Ring Buffer -polega na tworzeniu w określonych przez użytkownika odległościach bufora wokół wybranej warstwy. Bufory mogą zostać połączone w celu utworzenia nakładającej się warstwy. 
+
+                            </p>
+                     <div class ="obrazek">
+                            <img src="zdjecia/Przyklad_zastos.JPG" style="width:25%;height:45%;">
+                     </div>
+                            <p>
+                                5.	<i>Identity</i> –  za pomocą tego narzędzia oblicza przecięcie geometryczne elementów wejściowych i funkcji tożsamości. Elementy wejściowe lub ich części, które nakładają się na funkcje tożsamości, uzyskają atrybuty tych cech tożsamości.
+                            </p>
+                     <div class ="obrazek">
+                            <img src="zdjecia/Schemat_dzialania_funkcji.JPG" style="width:40%;height:35%;">
+                     </div>
+                            <p>
+                                6.	<i>Feature to Raster</i> –konwertuje dane na dane rastrowe. Dodatkowo należało wpisać rozmiar komórki (0,0003) dla danych wyjściowych danych rastrowych. 
+                            </p>
+                            <p>
+                                7.	<i>Weighted Overlay</i> – narzędzie stosowane do analizy nakładek w celu rozwiązania problemów wielokryterialnych (takich jak wybór miejsca na podstawie danych wejściowych). Przy użyciu wspólnej skali oraz wag według ważności nakłada na siebie połączone dane rastrowe.  
+                            </p>
+                    <div class ="obrazek">
+                            <img src="zdjecia/Weight_Overlay.JPG" style="width:40%;height:35%;">
+                     </div>
+                            <p>
+                                Schemat pokazuje połączenie dwóch rastrów, w karych każdy ma przypisany procentowy wpływ (Influence) oraz komórki posiadają odpowiednie skale pomiarowe. Wartości komórek wyjściowego rastra sumowane są z rastrów po przedniejszym uwzględnieniu procentowej wartości udziału.<br>
+                            </p>
+                            <p>
+                                8.	<i>Clip</i> - polega na wyodrębnieniu warstw nakładających się na dany obszar.
+                            </p>
+                            <p>
+                                9.	<i>Con</i> - Wykonuje warunkową ocenę dla każdej z komórek wejściowych rastra wejściowego.
+                            </p>
+                            <p>
+                                10.	<i>Majority Filter</i> -
+                            </p>
+                            
                    </article>
                 </div>
             </div>
+    
+//guziczek
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)//wwtswietlanie
+  {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// przenosi do gory
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>    
         </body>
-    </html>
+</html>
