@@ -14,16 +14,10 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-
-  background-color: dimgrey;
-
-  padding: 20px;
-  font-family: Arial;
+    
+body {  
+  padding: 0px;
+  font-family: Times New Roman;
 }
 
 /* Center website */
@@ -63,8 +57,6 @@ h1 {
 
 /* Content */
 .content {
-
-  background-color: dimgray;
 
   padding: 10px;
 }
@@ -114,17 +106,21 @@ h1 {
             <nav>
                 <ul class="menu">
                     <li><a href="../index.html">Strona główna</a><li>
-                    <li><a href="#">O projekcie</a><li>
-                    <li><a href="#">Materiały</a><li>
-                    <li><a href="#">Kontakt</a><li>
+                    <li><a href="dokumentacja.html">Dokumentacja</a><li>
+                    <li><a href="strefa_buforowa.html">Strefa buforowa</a><li>
+                    <li><a href="lokalizacja.html">Lokalizacja szkół</a><li>
+                    <li><a href="wnioski.html">Wnioski</a><li>
                 </ul>
             </nav>
             
              <header>
-                <h1>Strefa buforowa dla obiektów</h1>                            
+               <center>
+                <h1>Strefa buforowa dla obiektów</h1>
+                </center>                            
              </header>
             
              <div id="myBtnContainer">
+               <center>
                 <button class="btn active" onclick="filterSelection('all')"> Pokaż wszystkie</button>
                 <button class="btn" onclick="filterSelection('cmentarz')"> Cmentarze</button>
                 <button class="btn" onclick="filterSelection('drogi')"> Drogi</button>
@@ -135,6 +131,7 @@ h1 {
                 <button class="btn" onclick="filterSelection('wiezienie')"> Więzienia</button>
                 <button class="btn" onclick="filterSelection('wod_lioniowe')"> Wody liniowe</button>
                 <button class="btn" onclick="filterSelection('wod_powierz')"> wody powierzchniowe</button>
+                </center>
             </div>
             
 <!-- Portfolio Gallery Grid -->
@@ -142,59 +139,66 @@ h1 {
             <div class="column cmentarz">
                 <div class="content">
 
-                    <img src="../dokumentacja/mapki/cmentarze.jpg" alt="cmentarz" style="width:100%">
+                    <center><img src="../dokumentacja/mapki/cmentarze.jpg" alt="cmentarz" style="width:60%" justify-content = center></center>
 
 
-                    <h4>Cmentarz</h4>
+                    <center><h4>Cmentarz</h4></center>
+                    <center>
                     <p>
                         Jak widać na zamieszczonej mapie obszar zajmowanych cmentarzy mieści się głownie we wschodniej części gminy oraz kilkunastu obszarach równomiernie rozmieszczonych po całej gminie. Mimo iż wydawało się że obiekty te nie będą miały dużego wpływu jednak znacząco mają na analizę ze względu na duża ilość występowania. 
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column drogi">
                 <div class="content">
 
-                    <img src="mapki/drogi.jpg" alt="drogi" style="width:100%">
+                    <center><img src="mapki/drogi.jpg" alt="drogi" style="width:60%"> </center>
 
                 
 
-                    <h4>Drogii</h4>
+                    <center><h4>Drogi</h4></center>
+                     <center>
                     <p>
                         Jak można zauważyć sieć dróg jest bardzo gęsta i można zauważyć ze w samym centrum obszaru gminy znajduje się większe miasto który jest Rzeszów. Efektem postępującej od kilku lat modernizacji dróg w regionie podkarpackim jest m.in. otwarcie odcinka autostrady A4 (Drezno – Kijów) oraz fragmentu drogi ekspresowej S19 (Suwałki – Barwinek). Do analizy drożni wybrano wszystkie typy dróg. 
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column tereny">
                 <div class="content">
 
-                    <img src="mapki/ereny%20rekreacyjne.jpg" alt="tereny" style="width:100%">
+                    <center><img src="mapki/ereny%20rekreacyjne.jpg" alt="tereny" style="width:60%"></center>
 
                    
 
-                    <h4>Tereny rekreacyjne</h4>
+                    <center><h4>Tereny rekreacyjne</h4></center>
+                     <center>
                     <p>
                       Powyższy rysunek przedstawia strefy buforowe wykonane dla terenów rekreacyjnych. Ilość buforów jest bardzo niewielka i występuje od południowo wschodniej części aż do północno środkowej części. Z racji na niewielką ilość obiektów nie będą one miały zbyt wielkiego wpływu na analizę. 
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column kolej">
                 <div class="content">
 
-                    <img src="mapki/kolej.jpg" alt="kolej" style="width:100%">
+                    <center><img src="mapki/kolej.jpg" alt="kolej" style="width:60%"></center>
 
              
 
-                    <h4>Kolej</h4>
+                    <center><h4>Kolej</h4></center>
+                    <center>
                     <p>
                         Strefa buforowa warstwy kolei również jest rozbudowana, nie w takim dużym stopniu jak pozostałe warstwy jednak widać rozgałęzienia na kierunkach : 
-północnym (Tarnobrzeg – Stalowa Wola – Lublin – Warszawa),
-południowym (Jasło – Krosno – Zagórz)
-zachodnim (Dębica – Kraków – Katowice – Wrocław – Szczecin),
-wschodnim (Jarosław – Przemyśl – Lwów).
-
+                        północnym (Tarnobrzeg – Stalowa Wola – Lublin – Warszawa),
+                        południowym (Jasło – Krosno – Zagórz)
+                        zachodnim (Dębica – Kraków – Katowice – Wrocław – Szczecin),
+                        wschodnim (Jarosław – Przemyśl – Lwów).
+                    </center>
                     </p>
                 </div>
             </div>
@@ -202,68 +206,77 @@ wschodnim (Jarosław – Przemyśl – Lwów).
             <div class="column osiedla">
                 <div class="content">
 
-                    <img src="mapki/os_miesz.jpg" alt="osiedla" style="width:100%">
+                    <center><img src="mapki/os_miesz.jpg" alt="osiedla" style="width:60%"></center>
 
                    
 
-                    <h4>Osiedla mieszkalne</h4>
+                    <center><h4>Osiedla mieszkalne</h4></center>
+                     <center>
                     <p>
                         Wybrany przeze mnie obszar jest wysoce zurbanizowany jedynie widać ze w zachodniej części nie występują osiedla oraz w obszarach północnych, wpływ na to może mieć umiejscowione więzienie oraz występowanie licznych rzek. 
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column szkoly">
                 <div class="content">
 
-                    <img src="mapki/szko%C5%82y.jpg" alt="szkoly" style="width:100%">
+                    <center><img src="mapki/szko%C5%82y.jpg" alt="szkoly" style="width:60%"></center>
 
                  
 
-                    <h4>Szkoły</h4>
+                    <center><h4>Szkoły</h4></center>
+                     <center>
                     <p>
                         Warstwa z buforem występowania szkół jest bardzo rozbudowana co świadczy o wysokiej urbanizacji gminy. Widać tendencje występowania szkół w głównej części miasta ale również równomierne rozmieszczenie na pozostałych obszarach. 
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column wiezienie">
                 <div class="content">
 
-                    <img src="mapki/wiezenia.jpg" alt="wiezienie" style="width:100%">
+                    <center><img src="mapki/wiezenia.jpg" alt="wiezienie" style="width:60%"></center>
                   
 
-                    <h4>Więzienia</h4>
+                    <center><h4>Więzienia</h4></center>
+                     <center>
                     <p>
                         Na obszarze gminy Rzeszów wyróżniamy jedynie jedno więzienie wysunięta na północny wschód miasta. Jak można zauważyć strefy buforowe dla warstwy więźnia prawdopodobnie nie będą miały większego wpływu na dalsze analizy.	
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column 'wod_lioniowe">
                 <div class="content">
 
-                    <img src="mapki/wody_liniowe.jpg" alt="wod_lioniowe" style="width:100%">
+                    <center><img src="mapki/wody_liniowe.jpg" alt="wod_lioniowe" style="width:60%"></center>
 
 
-                    <h4>Wody liniowe</h4>
+                    <center><h4>Wody liniowe</h4></center>
+                     <center>
                     <p>
                         Przedstawiona mapa obrazuje rozbudowaną sieć rzeczną, Na terenie miasta do wód powierzchniowych płynących zaliczamy: Wisłok (największa zlewnia w województwie podkarpackim. Przecina miasto na 2 części -wschodnią i zachodnią), Stary Wisłok, Strug, Mikośka, Przyrwa, Młynówka, Czekaj, Hermanówka, Krzypopa, Paryja.
                     </p>
+                    </center>
                 </div>
             </div>
             
             <div class="column 'wod_powierz">
                 <div class="content">
 
-                    <img src="mapki/wody_powierzchniowe.jpg" alt="wod_powierz" style="width:100%">
-
+                    <center> <img src="mapki/wody_powierzchniowe.jpg" alt="wod_powierz" style="width:60%"></center>
                   
 
-                    <h4>Wody powierzchniowe</h4>
+                    <center><h4>Wody powierzchniowe</h4></center>
+                     <center>
                     <p>
                         Jak można zauważyć widoczny jeden ciek wodny oraz kilka większych jeziow występujących na całym obszarze gminy. Rzeszów położony jest w zlewni rzeki Wisłok, będącej lewobrzeżnym i największym dopływem Sanu. Wisłok o długości 228,5 km i powierzchni zlewni 3 541 km2 , wypływa ze źródeł położonych na północnych zboczach masywu Komańczy, leżącego w okolicy wsi Wisłok Wielki.
                     </p>
+                    </center>
                 </div>
             </div>
             

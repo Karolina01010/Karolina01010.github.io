@@ -59,10 +59,7 @@ nav
     color:#fff;
     text-decoration: none;
 }
-.menu a:hover
-{
-    color:#0a2b42;
-}
+
 
 .container
 {
@@ -117,11 +114,11 @@ figure
 {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
+
     height:: auto;
     width: 500 px;
-=======
+
     height: auto;
     width: auto;
->>>>>>> f28aba968f54e9750c796ba4c9d1b1d522ee7289
+
 }
