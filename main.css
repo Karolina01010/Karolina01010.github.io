@@ -59,7 +59,10 @@ nav
     color:#fff;
     text-decoration: none;
 }
-
+.menu a:hover
+{
+    color:#0a2b42;
+}
 
 .container
 {
